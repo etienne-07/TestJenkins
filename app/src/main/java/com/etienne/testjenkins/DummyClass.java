@@ -10,7 +10,7 @@ public class DummyClass {
         return 4;
     }
 
-    public int dummyMethod2() {
+    public int dummyMethod3() {
         return 6;
     }
 }
