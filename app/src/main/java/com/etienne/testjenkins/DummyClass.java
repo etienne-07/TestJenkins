@@ -11,6 +11,6 @@ public class DummyClass {
     }
 
     public int dummyMethod2() {
-        return 5;
+        return 4;
     }
 }
