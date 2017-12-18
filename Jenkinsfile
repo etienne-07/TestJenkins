@@ -1,5 +1,4 @@
 node {
-    stages {
 	    stage('Checkout'){
 	    	checkout scm
 	    }
@@ -10,5 +9,5 @@ node {
         stage('Test') {
             sh "./gradlew testFullReleaseUnitTest"
         }
-    }
+    
 }
