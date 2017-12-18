@@ -9,4 +9,8 @@ public class DummyClass {
     public int dummyMethod() {
         return 4;
     }
+
+    public int dummyMethod2() {
+        return 6;
+    }
 }
