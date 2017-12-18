@@ -1,21 +1,14 @@
-pipeline {
-    agent any
-
+node {
     stages {
+	    stage('Checkout'){
+	    	checkout scm
+	    }
         stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+            sh "./gradlew clean"
+            sh "./gradlew assembleRelease"
         }
         stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+            sh "./gradlew testFullReleaseUnitTest"
         }
     }
 }
