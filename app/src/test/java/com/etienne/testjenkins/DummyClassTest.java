@@ -22,8 +22,4 @@ public class DummyClassTest {
         assertEquals(4, subject.dummyMethod());
     }
 
-    @Test
-    public void dummyMethodShouldReturnFive() throws Exception {
-        assertEquals(5, subject.dummyMethod2());
-    }
 }
